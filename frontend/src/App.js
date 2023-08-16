@@ -1,35 +1,26 @@
-import data from './data'
 
-
+import{BrowserRouter,Routes,Route} from 'react-router-dom'
+import Productscreen  from './components/Productscreen';
+import Homescreen from './components/Homescreen';
 function App() {
   return (
+    <BrowserRouter>
+   
+    
     <div >
       <header>
        <a href='/'>Amazona</a>
       </header>
       <main>
-       <h1>Featured Products</h1>
-       <div className="products">
-       {
-        data.products.map((product)=>{
-          return <div key={product.slug} className="product">
-            <a href ={`/products/${product.slug}`}   >
-            <img src={product.image} alt={product.name}/>
-            </a>
-            <div className="product-info">
-            <a href ={`/products/${product.slug}`}   >
-            <p>{product.name}</p>
-            </a>
-            <p> <strong>${product.price}</strong></p>
-            </div>
-            
-          </div>
-        })
-       }
-       </div>
+      <Routes>
+      <Route path="/products/:slug" element={<Productscreen/>}/>
+      <Route path="/" element={<Homescreen/>}/>
+    </Routes>
+  
       
       </main>
     </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,5 +1,5 @@
-MERN-AMAZONA APPLICATION
+#MERN-AMAZONA APPLICATION
 
-lessions
-01-create-react-app
-02-initialize git
+#lessions
+1. create-react-app
+2. initialize git
