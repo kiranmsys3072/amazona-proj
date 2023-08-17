@@ -1,5 +1,5 @@
 
-import{BrowserRouter,Routes,Route} from 'react-router-dom'
+import{BrowserRouter,Routes,Route, Link} from 'react-router-dom'
 import Productscreen  from './components/Productscreen';
 import Homescreen from './components/Homescreen';
 function App() {
@@ -9,7 +9,7 @@ function App() {
     
     <div >
       <header>
-       <a href='/'>Amazona</a>
+       <Link to='/'>Amazona</Link>
       </header>
       <main>
       <Routes>

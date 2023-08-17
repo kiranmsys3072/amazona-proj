@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  
+  "version": "1.0.0",
+  "description": "this is amazona web proj",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiranmsys3072/amazona-proj.git"
+  },
+  "author": "raj kiran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiranmsys3072/amazona-proj/issues"
+  },
+  "homepage": "https://github.com/kiranmsys3072/amazona-proj#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
